@@ -32,7 +32,7 @@ p {
 h1 {
     font-family: 'Petrona', serif;
     font-size: 1.3em;
-	color: #3b88aa;
+    color: #3b88aa;
 }
 .fa {
     font-size: 40px;
@@ -61,20 +61,43 @@ h1 {
     color: #c5c7db;
 }
 
-	
-	
 @media screen and (min-width: 1200px) {
-	#mobilenav{
-	display: none;
-	}}
-	
-	 
-	
-	
+#mobilenav {
+    display: none;
+}
+}
+
+@media screen and (max-width: 1199px) {
+#desktopnav {
+    display: none;
+}
+}
+
+@media screen and (min-width: 1200px) {
+#desktopnav {
+    display: flex;
+    justify-content: space-evenly;
+}
+}
+
+@media screen and (min-width: 1200px) {
+#desktopnav ul {
+    display: flex;
+}
+}
+
+@media screen and (min-width: 1200px) {
+#desktopnav li {
+    display: flex;
+    padding-right: 15px;
+    font-family: 'Petrona', serif;
+    font-size: 1.3em;
+    color: #3b88aa;
+}
+}
 main {
     background-color: white;
 }
-
 .printheading {
     background-color: #c5c7db;
     padding-top: .75em;
@@ -95,102 +118,86 @@ main {
     display: none;
 }
 }
-	
+
 @media screen and (min-width: 1200px) {
 #projects-container-desktop {
     display: flex;
-	background-color: #3b88aa;
-	justify-content: space-between;
-	height: 770px;
+    background-color: #3b88aa;
+    justify-content: space-between;
+    height: 770px;
 }
 }
 
 @media screen and (min-width: 1200px) {
 #desktop-description-1 {
-	position: absolute;
-	left: 26px;
-	top: 40px;
-	width: 340px;
-	}}
-	
+    position: absolute;
+    left: 26px;
+    top: 40px;
+    width: 340px;
+}
+}
+
 @media screen and (min-width: 1200px) {
 #desktop-description-1 p {
-	color: black;
-	}}
-	
-	@media screen and (min-width: 1200px) {
+    color: black;
+}
+}
+
+@media screen and (min-width: 1200px) {
 #desktop-description-1 h1 {
-	color: #3b88aa;
-	}}
-	
-	
-	
-	#desktop-image-1 {
-	position: relative;
+    color: #3b88aa;
+}
+}
+#desktop-image-1 {
+    position: relative;
     margin: 0 auto;
-	}	
-	
-	#catalog-1 {
-	position: absolute;
-	top: 32px;
-	left: 372px;
-	}
-	
-	#catalog-1:hover {
-  filter: brightness(110%);
-	}
-	
-		#catalog-2 {
-	position: absolute;
-	top: 324px;
-	left: 565px;
-	}
-	
-	#catalog-2:hover {
-  filter: brightness(110%);
-	}
-	
-	
-	
-	
-	
-		#ads-1 {
-	position: absolute;
-	top: 46px;
-	left: 780px;
-	}
-	
-	#ads-1:hover {
-  filter: brightness(110%);
-	}
-	
-		#assembly-1 {
-	position: absolute;
-	top: 250px;
-	left: 750px;
-	}
-	
-	#assembly-1:hover {
-  filter: brightness(110%);
-	}
-	
-	#vbads-1 {
-	position: absolute;
-	top: 390px;
-	left: 370px;
-	}
-	
-	#vbads-1:hover {
-  filter: brightness(110%);
-	}
-	
-	
+}
+#catalog-1 {
+    position: absolute;
+    top: 32px;
+    left: 372px;
+}
+#catalog-1:hover {
+    filter: brightness(110%);
+}
+#catalog-2 {
+    position: absolute;
+    top: 324px;
+    left: 565px;
+}
+#catalog-2:hover {
+    filter: brightness(110%);
+}
+#ads-1 {
+    position: absolute;
+    top: 46px;
+    left: 780px;
+}
+#ads-1:hover {
+    filter: brightness(110%);
+}
+#assembly-1 {
+    position: absolute;
+    top: 250px;
+    left: 750px;
+}
+#assembly-1:hover {
+    filter: brightness(110%);
+}
+#vbads-1 {
+    position: absolute;
+    top: 390px;
+    left: 370px;
+}
+#vbads-1:hover {
+    filter: brightness(110%);
+}
+
 @media screen and (min-width: 1200px) {
 #mobile-projects-container {
     display: none;
 }
 }
-	
 
 @media screen and (min-width: 720px) {
 .project-container-r {
@@ -260,32 +267,26 @@ main {
     padding-right: 5%;
 }
 }
-	
-	
-	footer {
-	position: relative;
-	background-color: #c5c7db;
-	height: 150px;
-		}
-	
-	footer p {
-	position: relative;
-		text-align: center;
-	color: black;
-		width: 200px;
-		padding-top: 20px;
-		margin: 0 auto;
-		
-	}
-	
-	
-
+footer {
+    position: relative;
+    background-color: #c5c7db;
+    height: 150px;
+}
+footer p {
+    position: relative;
+    text-align: center;
+    color: black;
+    width: 200px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
 </style>
 </head>
 
 <body>
 <header>
   <nav>
+    <div class="logocenter"><img src="img/logo-80px.png"></div>
     <div id="mobilenav"> 
       <!-- Top Navigation Menu -->
       <div class="topnav"> <a href="" class=""></a> 
@@ -294,40 +295,29 @@ main {
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links --> 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a> </div>
     </div>
-    <div id="desktopnav"> </div>
+    <div id="desktopnav">
+      <ul>
+        <li>HOME</li>
+        <li>PRINT</li>
+        <li>DIGITAL</li>
+        <li>WEB</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
   </nav>
-  <div class="logocenter"><img src="img/logo-80px.png"></div>
 </header>
 <main>
   <section class="printheading">
     <h1>PRINT PROJECTS</h1>
   </section>
-	
-	
-	
-	
-  <div id="projects-container-desktop"> 
-	  
-	
-	  
-	    <section id="desktop-image-1">
-		  <div id="desktop-description-1">
-	  <h1>Welcome...</h1>
-		  <p>Click on one of the projects on my desk to learn more about it. </p>
-	  </div>	
-			
-	  <img src="img/faux-desk-full-view-empty.jpg">
-			<a href=""><img id="catalog-1" src="img/catalog-png-2.png"></a>
-			<a href=""><img id="ads-1" src="img/alo-ads-png.png"></a>
-            <a href=""><img id="assembly-1" src="img/assembly-inst-png.png"></a>
-			  <a href=""><img id="vbads-1" src="img/vb-brochures-png.png"></a>
-			 <a href=""><img id="catalog-2" src="img/gallery-catalog-png.png"></a>
-	  </section>
-	
-	</div>
-	
-	
-	
+  <div id="projects-container-desktop">
+    <section id="desktop-image-1">
+      <div id="desktop-description-1">
+        <h1>Welcome...</h1>
+        <p>Click on one of the projects on my desk to learn more about it. </p>
+      </div>
+      <img src="img/faux-desk-full-view-empty.jpg"> <a href="#" onClick="window.open('projects-carousel-1.html','pagename','resizable,height=530,width=430'); return false;"><img id="catalog-1" src="img/catalog-png-2.png"></a> <a href="#" onClick="window.open('projects-carousel-2.html','pagename','resizable,height=530,width=430'); return false;"><img id="ads-1" src="img/alo-ads-png.png"></a> <a href="#" onClick="window.open('projects-carousel-3.html','pagename','resizable,height=470,width=430'); return false;"><img id="assembly-1" src="img/assembly-inst-png.png"></a> <a href="#" onClick="window.open('projects-carousel-2.html','pagename','resizable,height=530,width=430'); return false;"><img id="vbads-1" src="img/vb-brochures-png.png"></a> <a href="#" onClick="window.open('projects-carousel-1.html','pagename','resizable,height=530,width=430'); return false;"><img id="catalog-2" src="img/gallery-catalog-png.png"></a> </section>
+  </div>
   <div id="mobile-projects-container">
     <div class="project-container-r">
       <section>
@@ -390,16 +380,12 @@ main {
     
     <!-- Close the mobile projects container --> 
   </div>
-	
-	<footer>
-	<div>
-	<p>Lisa McIntire<br>
-	Website Copyright 2021</p>
-		</div>
-	</footer>
-	
-	
-	
+  <footer>
+    <div>
+      <p>Lisa McIntire<br>
+        Website Copyright 2021</p>
+    </div>
+  </footer>
 </main>
 <script>
 	

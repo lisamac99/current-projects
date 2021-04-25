@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Print Projects</title>
+<link rel="stylesheet" href="css/flickity.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Petrona:wght@500&display=swap" rel="stylesheet">
+<script src="js/flickity.pkgd.js"></script>
+<style>
+.logocenter {
+    position: relative;
+    width: 80px;
+    margin: 0 auto;
+}
+.logocenter img {
+    margin-bottom: 10px;
+}
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    width: 120px;
+    position: relative;
+    padding-top: 20px;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+}
+h1 {
+    font-family: 'Petrona', serif;
+    font-size: 1.3em;
+	color: #3b88aa;
+}
+.fa {
+    font-size: 40px;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+/* Style navigation menu links */
+.topnav a {
+    color: #3b88aa;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    color: #c5c7db;
+}
+
+	
+	
+@media screen and (min-width: 1200px) {
+	#mobilenav{
+	display: none;
+	}}
+	
+	 
+	
+	
+main {
+    background-color: white;
+}
+
+.printheading {
+    background-color: #c5c7db;
+    padding-top: .75em;
+    padding-bottom: .75em;
+    margin-bottom: 10px;
+}
+.printheading h1 {
+    text-align: center;
+    font-size: 1.75em;
+}
+.project-container-r {
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+
+	#catalog-1 {
+	position: absolute;
+	top: 32px;
+	left: 372px;
+	}
+	
+	#catalog-1:hover {
+  filter: brightness(110%);
+	}
+	
+		#catalog-2 {
+	position: absolute;
+	top: 324px;
+	left: 565px;
+	}
+	
+	#catalog-2:hover {
+  filter: brightness(110%);
+	}
+	
+
+.carousel-cell {
+    display: flex;
+    width: 100%; /* full width */
+    min-height: 230px;
+    margin-right: 10px;
+}
+.carousel-cell img {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.project-description {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+.project-description h1 {
+    text-align: center;
+}
+.project-description p {
+    text-align: justify;
+}
+
+	
+	
+
+</style>
+</head>
+
+<body>
+<header>
+  <nav>
+  </nav>
+
+</header>
+<main>
+
+
+	
+	
+  
+	  
+    <div class="project-container-r">
+      <section>
+        <div class="main-carousel-3">
+          <div class="carousel-cell"><img src="img/assembly-instructions-clock-mobile.png"></div>
+          <div class="carousel-cell"><img src="img/seahorse-table-assembly-mobile.png"></div>
+          <div class="carousel-cell"><img src="img/clock-assembly-mobile.png"></div>
+        </div>
+      </section>
+      <section>
+        <article class="project-description">
+          <h1>PRODUCT ASSEMBLY INSTRUCTIONS</h1>
+          <p>I designed and wrote product assembly instructions for a home decor manufacturer. These instructions are produced in black and white line art to save on printing costs. Adobe software used: InDesign, and Illustrator.</p>
+        </article>
+      </section>
+    </div>
+    
+    <!-- Close the mobile projects container --> 
+  </div>
+	
+
+	
+	
+	
+</main>
+<script>
+	
+	var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
+});
+	
+</script> 
+<script>
+	
+	var elem = document.querySelector('.main-carousel-2');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel-2', {
+  // options
+});
+	
+</script> 
+<script>
+	
+	var elem = document.querySelector('.main-carousel-3');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel-3', {
+  // options
+});
+	
+</script> 
+<script>
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+	</script>
+</body>
+</html>
